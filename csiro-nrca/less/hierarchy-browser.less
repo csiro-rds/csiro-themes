@@ -1,0 +1,93 @@
+@import "variables.less";
+
+.component-hierarchy-browser,
+.component-bundle-relationships,
+.component-bundle-hierarchy-navigation,
+.component-bundle-hierarchy-location,
+//TODO remove hierarchyWindow when new theme is implemented in admin pages. This just makes the vocabulary editor work
+.hierarchyWindow{
+    .hierarchyBrowser,
+    .hierarchyBrowserSmall,
+    .hierarchyBrowserLarge,
+    .hierarchyBrowserVertical {
+        border: 1px solid @list-group-border;
+        height: @hierarchy-browser-height;
+        background-color: @gray-lighter;
+
+        .hierarchyBrowserContainer,
+        .hierarchyBrowserContainerVertical {
+            position: relative;
+            overflow: auto;
+            overflow-y: hidden;
+            height: 100%;
+
+            div.hierarchyBrowserLevel,
+            div.hierarchyBrowserLevelVertical {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: @hierarchy-browser-level-width;
+                height: 100%;
+                border: 1px solid @list-group-border;;
+                background: #fff;
+                overflow: auto;
+
+                ul.hierarchyBrowserLevel:extend(.list-unstyled),
+                ul.hierarchyBrowserLevelVertical:extend(.list-unstyled) {
+                    padding: @padding-base-vertical @padding-base-horizontal;
+
+                    li:extend(.list-unstyled li) {
+                        margin-bottom: @padding-small-vertical;
+                        border-bottom: 1px dashed @list-group-border;
+                        padding-bottom: @padding-small-vertical;
+
+                        a {
+                            color: @link-color;
+                            text-decoration: none;
+
+                            &.hierarchyBrowserLevelSelected {
+                                font-weight: bold;
+                                font-style: normal;
+                            }
+
+                            &.hierarchyBrowserLevelEditButton {
+                                font-weight: bold;
+                            }
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hierarchyBrowserLevelVertical {
+                text-align: center;
+            }
+
+            span.hierarchyBrowserCurrentSelectionText {
+                font-style: italic;
+            }
+        }
+    }
+    .hierarchyBrowserSearchBar {
+        margin-bottom: @form-group-margin-bottom;
+    }
+    .hierarchyBrowserVertical {
+        height: @hierarchy-browser-vertical-height;
+        overflow: auto;
+    }
+
+    .hierarchyBrowserSmall {
+        height: @hierarchy-browser-small-height;
+    }
+
+    .hierarchyBrowserLarge {
+        height: @hierarchy-browser-large-height;
+    }
+
+    .hierarchyBrowseTab {
+        overflow: hidden;
+    }
+}

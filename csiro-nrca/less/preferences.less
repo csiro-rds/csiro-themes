@@ -1,0 +1,146 @@
+#sidebarCollapse .glyphicon {
+    transition: all 0.3s;
+    transform: rotate(90deg);
+    body.sidebar-collapsed & {
+        transform: rotate(0deg);
+    }
+}
+
+.component-screen .bundles-container .bundleLabel {
+    transition: all 0.3s;
+    // Form Spacing
+    body.form-spacing-collapsed & {
+        padding: @padding-xs-vertical @padding-xs-horizontal;
+        .form-group {
+            margin-bottom: @padding-xs-vertical;
+        }
+    }
+    body.form-spacing-compact & {
+        padding: @padding-small-vertical @padding-small-horizontal;
+        .form-group {
+            margin-bottom: @padding-small-vertical;
+        }
+    }
+    body.form-spacing-normal & {
+        padding: @padding-base-vertical @padding-base-horizontal;
+        .form-group {
+            margin-bottom: @padding-base-vertical;
+        }
+    }
+    body.form-spacing-sparse & {
+        padding: @padding-large-vertical @padding-large-horizontal;
+        .form-group {
+            margin-bottom: @padding-large-vertical;
+        }
+    }
+    body.form-spacing-expanded & {
+        padding: @padding-xl-vertical @padding-xl-horizontal;
+        .form-group {
+            margin-bottom: @padding-xl-vertical;
+        }
+    }
+    // Field Padding
+    input,
+    textarea,
+    select,
+    .form-control {
+        transition: all 0.3s;
+        // minimum height for inputs
+        min-height: 1.5em;
+        line-height: 1.5em;
+        height: inherit;
+        body.field-padding-collapsed & {
+            padding: @padding-xs-vertical @padding-xs-horizontal;
+        }
+        body.field-padding-compact & {
+            padding: @padding-small-vertical @padding-small-horizontal;
+        }
+        body.field-padding-normal & {
+            padding: @padding-base-vertical @padding-base-horizontal;
+        }
+        body.field-padding-sparse & {
+            padding: @padding-large-vertical @padding-large-horizontal;
+        }
+        body.field-padding-expanded & {
+            padding: @padding-xl-vertical @padding-xl-horizontal;
+        }
+    }
+    select:not([multiple]) {
+        body.field-padding-collapsed & {
+            padding-right: @padding-xs-horizontal + @font-size-xs;
+        }
+        body.field-padding-compact & {
+            padding-right: @padding-small-horizontal + @font-size-small;
+        }
+        body.field-padding-normal & {
+            padding-right: @padding-base-horizontal + @font-size-base;
+        }
+        body.field-padding-sparse & {
+            padding-right: @padding-large-horizontal + @font-size-large;
+        }
+        body.field-padding-expanded & {
+            padding-right: @padding-xl-horizontal + @font-size-xl;
+        }
+    }
+    // Font Size
+    &, // Include parent .bundleLabel
+    input,
+    textarea,
+    select,
+    .form-control {
+        body.font-size-tiny & {
+            font-size: @font-size-xs;
+            background-size: @font-size-xs * @select-arrow-ratio;
+        }
+        body.font-size-small & {
+            font-size: @font-size-small;
+            background-size: @font-size-small * @select-arrow-ratio;
+        }
+        body.font-size-medium & {
+            font-size: @font-size-base;
+            background-size: @font-size-base * @select-arrow-ratio;
+        }
+        body.font-size-large & {
+            font-size: @font-size-large;
+            background-size: @font-size-large * @select-arrow-ratio;
+        }
+        body.font-size-huge & {
+            font-size: @font-size-xl;
+            background-size: @font-size-xl * @select-arrow-ratio;
+        }
+    }
+    label {
+        body.font-size-tiny & {
+            font-size: ceil(@font-size-xs * 0.85);
+        }
+        body.font-size-small & {
+            font-size: ceil(@font-size-small * 0.85);
+        }
+        body.font-size-medium & {
+            font-size: ceil(@font-size-base * 0.85);
+        }
+        body.font-size-large & {
+            font-size: ceil(@font-size-large * 0.85);
+        }
+        body.font-size-huge & {
+            font-size: ceil(@font-size-xl * 0.85);
+        }
+    }
+    // Linear Forms
+    &.col-md-1,
+    &.col-md-2,
+    &.col-md-3,
+    &.col-md-4,
+    &.col-md-5,
+    &.col-md-6,
+    &.col-md-7,
+    &.col-md-8,
+    &.col-md-9,
+    &.col-md-10,
+    &.col-md-11,
+    &.col-md-12 {
+        .linear-forms & {
+            width: 100%;
+        }
+    }
+}

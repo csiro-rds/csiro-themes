@@ -1,0 +1,15 @@
+.component-screen {
+    .bundles-container > .row {
+        &:not(:last-child) {
+            border-bottom: @border-width-divider dotted @gray-lighter;
+        }
+
+        > div:not(:last-child) {
+            border-right: @border-width-divider dotted @gray-lighter;
+        }
+    }
+
+    label {
+        margin-top: @padding-base-vertical;
+    }
+}

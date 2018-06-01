@@ -1,0 +1,15 @@
+/*
+ * Tasks for building the theme before packaging.
+ */
+
+task npmInstallNrcaTheme(type: NpmTask) {
+    description 'Install npm dependencies for the CSIRO NRCA theme.'
+    group 'Continuous Delivery'
+    args = [ 'install', '--prefix', 'csiro-nrca' ]
+}
+
+task gulpBuildNrcaTheme(type: GulpTask, dependsOn: ['installGulp', 'npmInstallNrcaTheme']) {
+    description 'Perform a gulp build of the CSIRO NRCA theme.'
+    group 'Continuous Delivery'
+    args = [ 'build', '--cwd', 'csiro-nrca' ]
+}

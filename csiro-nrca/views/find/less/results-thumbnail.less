@@ -1,0 +1,28 @@
+.component-results-thumbnail {
+    padding-top: @padding-base-vertical;
+
+    .item {
+        .image-container {
+            position: relative;
+
+            .editor-link {
+                display: block;
+                width: 100%;
+                text-align: center;
+
+                .glyphicon.placeholder {
+                    font-size: @image-preview-placeholder-font-size;
+                    margin: ((@image-preview-height - @image-preview-placeholder-font-size) / 2) 0;
+                }
+            }
+        }
+
+        .caption {
+            margin-bottom: 0;
+
+            .add-to-set input[type=checkbox] {
+                vertical-align: bottom;
+            }
+        }
+    }
+}

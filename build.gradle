@@ -1,0 +1,104 @@
+/*
+ * Gradle build script for CSIRO's Providence themes.
+ * Built for Gradle v2.6
+ *
+ * Primary tasks are:
+ *  clean - Remove the contents of the build folder ready for a full rebuild.
+ *  build - Compiles the code, builds the jar, and runs the tests (this is the most commonly used command)
+ */
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("org.hidetake:gradle-ssh-plugin:0.3.10")
+        classpath("com.moowork.gradle:gradle-node-plugin:1.2.0")
+        classpath("com.moowork.gradle:gradle-gulp-plugin:0.13")
+    }
+}
+
+task wrapper(type: Wrapper) { gradleVersion = '2.6' }
+
+apply plugin: 'maven-publish'
+apply plugin: 'ssh'
+apply plugin: 'distribution'
+apply plugin: 'com.moowork.node'
+apply plugin: 'com.moowork.gulp'
+
+group = 'au.csiro'
+description = 'Providence Themes'
+
+ext {
+    majorVersion = 0
+    minorVersion = 1
+    installDir = 'build/install/'+project.name
+}
+
+node {
+    version = '6.11.4'
+    download = true
+}
+
+apply from: 'gradle/versioning.gradle'
+apply from: 'gradle/gulp-build.gradle'
+
+//=====================================================================================================================
+//
+// Main artifact build configuration
+//
+//=====================================================================================================================
+
+
+distributions {
+    main {
+        baseName = 'csiro-themes'
+        contents {
+            from(".") {
+                include "README.md"
+                include "csiro-nrca/conf/**"
+                include "csiro-nrca/css/**"
+                include "csiro-nrca/fonts/**"
+                include "csiro-nrca/graphics/**"
+                include "csiro-nrca/helpers/**"
+                include "csiro-nrca/js/**"
+                include "csiro-nrca/views/**"
+                include "csiro-nrca/themeInfo.conf"
+                include "csiro-nrca/README.md"
+            }
+            from("build/resources/main/resources") {
+                include "version.properties"
+            }
+        }
+    }
+}
+
+distZip.dependsOn {
+    makeVersionProps
+    gulpBuildNrcaTheme
+}
+
+
+//=====================================================================================================================
+//
+// Include other build files
+//
+//=====================================================================================================================
+
+
+// We conditionally apply the publish script so that we don't need the properties for all builds.
+if (gradle.startParameter.taskNames.any{it =~ /publish/}) {
+    apply from: 'gradle/publish.gradle'
+}
+
+// We conditionally apply the deploy script so that we don't need the properties for all builds.
+if (gradle.startParameter.taskNames.contains('deployToServer')) {
+    apply from: 'gradle/deploy.gradle'
+}
+
+// The status task does a health check on the deployed system and throws an exception if its not healthy
+if (gradle.startParameter.taskNames.contains('status')) {
+    apply from: 'gradle/status.gradle'
+}

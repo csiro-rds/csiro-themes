@@ -1,0 +1,39 @@
+<?php
+require_once($this->request->getDirectoryPathForThemeFile('helpers/themeHelpers.php'));
+
+$t_lot = $this->getVar('t_subject');
+$vn_lot_id = $this->getVar('subject_id');
+
+$va_bundle_list = array();
+$va_form_elements = $t_lot->getBundleFormHTMLForScreen(
+    $this->request->getActionExtra(),
+    array(
+        'request' => $this->request,
+        'formName' => 'ObjectLotEditorForm'
+    ),
+    $va_bundle_list
+);
+$this->setVar('delete_url', caNavUrl($this->request, 'editor/object_lots', 'ObjectLotEditor', 'Delete/'.$this->request->getActionExtra(), array('lot_id' => $vn_lot_id)));
+$this->setVar('cancel_url', caNavUrl($this->request, 'editor/object_lots', 'ObjectLotEditor', 'Edit/'.$this->request->getActionExtra(), ($vn_lot_id ? array('lot_id' => $vn_lot_id) : array('type_id' => $t_lot->getTypeID()))));
+?>
+<div class="component component-screen">
+    <?php print caFormTag($this->request, 'Save/'.$this->request->getActionExtra().'/lot_id/'.$vn_lot_id, 'ObjectLotEditorForm', null, 'POST', 'multipart/form-data'); ?>
+        <?php print $this->render($this->request->getDirectoryPathForThemeFile('views/common/editor_controls_html.php')); ?>
+        <div class="bundles-container">
+            <?php foreach (groupFormElementsByBundle($va_bundle_list, $va_form_elements) as $va_group): ?>
+                <div class="row">
+                    <?php print join("\n", $va_group); ?>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <input id="isSaveAndReturn" type="hidden" name="is_save_and_return" value="0" />
+        <input type="hidden" name="lot_id" value="<?php print $vn_lot_id; ?>" />
+        <input type="hidden" name="rel_table" value="<?php print $this->getVar('rel_table'); ?>" />
+        <input type="hidden" name="rel_type_id" value="<?php print $this->getVar('rel_type_id'); ?>" />
+        <input type="hidden" name="rel_id" value="<?php print $this->getVar('rel_id'); ?>" />
+        <?php if ($this->request->getParameter('rel', pInteger)): ?>
+            <input type="hidden" name="rel" value="1" />
+        <?php endif; ?>
+    </form>
+    <?php print caSetupEditorScreenOverlays($this->request, $t_lot, $va_bundle_list); ?>
+</div>

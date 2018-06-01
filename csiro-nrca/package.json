@@ -1,0 +1,20 @@
+{
+  "name": "csiro-nrca-theme",
+  "version": "0.1.0",
+  "description": "Custom theme for CSIRO National Research Collections Australia",
+  "main": "themeInfo.conf",
+  "repository": "https://bitbucket.csiro.au/scm/cms/csiro-themes.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben New <ben.new@gaiaresources.com.au>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "rimraf": "^2.6.2"
+  }
+}

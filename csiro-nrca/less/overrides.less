@@ -1,0 +1,122 @@
+.dropdown-menu > li > a.text-danger {
+    color: @brand-danger;
+}
+
+label {
+    font-weight: normal;
+    font-size: @font-size-small;
+    color: @gray;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+// TODO Work out why this duplication is necessary
+select.form-control:not([multiple]) {
+    background: #fff url('../graphics/arrows/select.png') right no-repeat;
+    padding-right: @padding-large-horizontal + 24px; // Width of select-arrow.png
+}
+select:extend(.form-control) {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    &:not([multiple]) {
+        background: url('../graphics/arrows/select.png') right no-repeat;
+        padding-right: @padding-large-horizontal + 24px; // Width of select-arrow.png
+    }
+}
+select:focus:extend(.form-control:focus) {
+}
+.input-group select {
+    border-radius: 0;
+}
+
+input:not([type=checkbox]):not([type=radio]):extend(.form-control) {
+}
+input:not([type=checkbox]):not([type=radio]):focus:extend(.form-control:focus) {
+}
+
+textarea:extend(.form-control) {
+}
+textarea:focus:extend(.form-control:focus) {
+}
+
+.modal-body {
+    // This is an in-browser CSS3 calc(), not a LESS calc(); the modal body is the viewport height minus 100px each at top and bottom
+    height: ~"calc(100vh - 200px)";
+    overflow-y: auto;
+}
+
+.panel {
+    .panel-heading a {
+        text-decoration: none;
+        color: @gray;
+
+        &:hover {
+            color: @brand-secondary;
+        }
+    }
+
+    .panel-body {
+        > table.table:only-child {
+            margin-bottom: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.well,
+.panel .panel-body {
+    h2:first-child,
+    h3:first-child,
+    h4:first-child,
+    h5:first-child {
+        margin-top: 0;
+    }
+}
+
+.add,
+.remove,
+.print {
+    font-size: @font-size-small;
+    color: @gray-light;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    .opacity(.5);
+
+    &:hover,
+    &:focus {
+        color: @gray;
+    }
+}
+
+.visibility {
+    color: @gray;
+
+    &:hover,
+    &:focus {
+        color: @gray-light;
+    }
+}
+
+table.table thead .btn-group {
+    padding: 0;
+}
+
+// Legacy styles that are hardcoded into PHP or JS and cannot be easily changed for something else.
+
+.bundleDisplayElementSettingsControl:extend(.pull-right) {}
+.bundleDisplayEditorPlacementListItemTitle:extend(.text-muted) {}
+.tooltip h3 {
+    margin-top: @padding-small-vertical;
+}

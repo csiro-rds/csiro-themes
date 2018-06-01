@@ -1,0 +1,2590 @@
+
+/*** NOTIFICATIONS ***/
+
+div.notification-info-box {
+    /*background:	url('../graphics/icons/info.png') no-repeat 10px 7px;*/
+    background-size:32px 32px;
+    text-indent: 32px;
+    background-color: #f3f3f3;
+    padding: 5px;
+    margin-bottom: 10px;
+    clear:both;
+    border-radius: 0 !important;
+}
+
+div.notification-error-box {
+    /*background:	url('../graphics/icons/warning_sign.png') no-repeat 10px 5px;*/
+    text-indent: 32px;
+    background-color: #eeeeee;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div.notification-warning-box {
+    /*background:	url('../graphics/buttons/warning_sign.png') no-repeat 10px 10px;*/
+    text-indent: 32px;
+    background-color: #eeeeee;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+ul.notification-error-box, ul.notification-warning-box, ul.notification-info-box {
+    list-style-type: none;
+}
+
+li.notification-info-box {
+    font-weight: bold;
+    color: #1ab3c8;
+}
+
+li.notification-warning-box {
+    font-weight: bold;
+    color: #333;
+}
+
+li.notification-error-box {
+    font-weight: bold;
+    color: #cc0000;
+}
+
+div.hint {
+    color: black;
+    border: 2px solid #000000;
+    background-color: #F08080;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+/*** FORMS ***/
+
+/* Style for labels on standard form fields (ie. no error) */
+.bundleSubLabel .editorBundlePrintControl,
+.bundleLabel .iconButton {
+	float: right;
+}
+
+.caDupeAttributeMessageBox {
+    color: #b32b21;
+}
+
+/* often times referred to as bundlePreview */
+.bundleContentPreview {
+	color:#888888;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 40%;
+}
+
+/* summary page */
+
+#summary {
+	margin-top:20px;
+	padding-bottom:60px;
+}
+#summary .summaryImages {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+#summary #title{
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    border-bottom:2px solid #eee;
+    font-weight: bold;
+    text-align: left;
+}
+#summary #printButton{
+    float:right;
+    width:30px;
+    margin:0 5px 5px 10px;
+}
+#summary .unit{
+    margin-bottom:10px;
+    clear:both;
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
+}
+#summary .heading{
+	text-transform:uppercase;
+	text-align: left;
+	width:30%;
+    overflow: hidden;
+	display:inline-block;
+	font-weight:bold;
+	color: #666;
+}
+#summary .summaryData{
+	width: 70%;
+	display: inline-block;
+	color:#333;
+}
+#summary .thumbnailsImageContainer{
+    border:1px solid #DDDDDD;
+    width:120px;
+    position:relative;
+}
+#summary .oneThumbContainer {
+	position:relative;
+}
+#summary .downloadMediaContainer {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#summary .notDefined{
+    color:#999999;
+}
+
+.quick-search-form-container {
+    display: none;
+    padding: 5px;
+    z-index:10;
+}
+
+.quick-search-form-container input {
+    width: 100%;
+}
+
+.quick-search-form-container a {
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    float:			none;
+    position:		static;
+    display:		inline;
+}
+
+.quick-search-form-container a:hover {
+    color: transparent;
+}
+
+/* form field tooltips */
+.tooltipFormat h3 {
+    padding: 0 0 10px 0 !important;
+    margin: 0 !important;
+    text-align:left !important;
+}
+.tooltipFormat {
+	color:#fff !important;
+	background-color:#333 !important;
+	border-radius:4px !important;
+	border: 0 !important;
+	text-align:left !important;
+}
+
+/*** FORM LISTS ***/
+
+/* table in general */
+
+table.listtable {
+    background-color: #CDCDCD;
+    margin:10px 0 15px;
+    width: 100%;
+    text-align: left;
+    clear:both;
+    border-collapse: collapse;
+}
+
+table.listtable tr, table.listtable tr td, table.listtable tr th {
+	border: 1px solid #ccc;
+}
+
+.listtableEdit {
+	width: 16px;
+	text-align: center;
+	padding: 3px !important;
+	white-space: nowrap;
+}
+
+.listtableEditDelete {
+	width: 36px;
+	text-align: center;
+	padding: 3px !important;
+	white-space: nowrap;
+}
+
+/* misc */
+
+#caSetList img.deleteIcon, #caSetList img.editIcon {
+	width:20px;
+	padding:5px;
+}
+.caIcon.deleteIcon:hover {
+	color:red;
+}
+
+#caSetList tbody tr td div.caSetListName, #caSetList tbody tr td div.caSetListOwner {
+	overflow: auto;
+}
+
+#caSetList tbody tr td div.caSetListName {
+	width: 160px;
+}
+
+#caSetList tbody tr td div.caSetListOwner {
+	width: 90px;
+}
+
+div.control-box {
+    background-color: #f7f7f7;
+    padding: 4px;
+    margin-bottom: 5px;
+    text-align: right;
+    border-radius: 4px !important;
+}
+
+div.formSettings {
+    background-color: #f9f9f9;
+    padding: 6px;
+    margin: 15px 0 15px 0;
+    border-radius:4px;
+}
+
+div.settingsKey {
+    display: none;
+    background-color: #F3F3F3;
+    padding: 6px;
+    width: 80%;
+}
+
+.settingsKeyRow {
+    font-weight: normal;
+}
+
+.settingsKeyButton {
+    margin-left: 15px;
+}
+
+
+a.list-button {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.listtableEditDelete a.list-button, .listtableEdit a.list-button {
+	margin-right: 0
+}
+
+a.list-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+div.control-box-left-content {
+    float: left;
+    margin: 3px;
+}
+
+div.control-box-middle-content {
+    text-align: center;
+    margin: 10px;
+    float: left;
+    font-weight: bold;
+}
+
+div.control-box-right-content {
+    float: right;
+    margin-top: 3px;
+}
+a.deleteButton span{
+	color: red;
+	font-weight:bold;
+}
+a.deleteButton span .caIcon:hover{
+	color:red;
+}
+a.deleteButton span.form-button:hover {
+	color:red;
+}
+div.control-box-right-content select {
+    width: 150px;
+}
+
+/*** SEARCH FORMS ***/
+
+div.search-options-box {
+    background-color: #DDDDDD;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+}
+
+div.search-hier-browser-box {
+    width: 400px;
+    height: 100px;
+}
+
+/*** SEARCH RESULTS ***/
+
+/* searchnav is used on all result pages with pages navigation **/
+.searchNav{
+    text-align:center;
+    margin:5px 0 3px 0;
+	color: #444;
+}
+.searchNav form{
+    float:left;
+    text-align:left;
+    width:220px;
+    margin:0;
+}
+.searchNav form input[type="text"]{
+    border:1px solid #999999;
+    padding:0;
+    margin:0;
+    font-weight:normal;
+    text-align:center;
+}
+.searchNav .nav{
+    float:right;
+    text-align:right;
+    width:220px;
+}
+
+select.searchHistorySelect {
+    width: 130px;
+}
+
+select.savedSearchSelect {
+    width: 130px;
+}
+select.searchSetSelect {
+    width: 130px;
+}
+
+
+/*** OBJECT REPRESENTATION ANNOTATION FORM ELEMENTS ***/
+table.representationAnnotationListItem {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+.annotationItem {
+    background-color: #fbfbfb;
+    border-top: 1px dotted #e6e6e6;
+    margin-left: 0;
+    padding: 5px;
+}
+
+/* overlay (for object representations) */
+#caMediaPanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin: 0;
+    padding: 0;
+    z-index: 34000;			/* needs to be on top of menu bar, which has z-index=30000 */
+}
+
+#caMediaPanelContentArea {
+    width: 100%;
+    height: 100%;
+}
+
+#caMediaOverlayTileViewer {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#caMediaDisplayContent, #caMediaOverlayContent {
+    margin: 0;
+    /* overflow: auto; */
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 36px;
+}
+
+#caMediaPanelProgress {
+    display: none;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+
+div.caMediaOverlayControls {
+    background-color: #000;
+    color:#FFF;
+    text-align:center;
+    position:absolute;
+    padding: 10px 0 10px 0;
+    width:100%;
+    bottom:0;
+    left:0;
+    z-index: 35000;			/* needs to be on top of caMediaPanel, which has z-index=34000 */
+    /* opacity:.1;	 */
+    opacity: 0.7;
+}
+
+div.caMediaOverlayControls a{
+    text-decoration:none;
+    font-weight:bold;
+    line-height: 12px;
+    color:#FFF;
+}
+div.caMediaOverlayControls a:hover{
+    color:#FFF;
+}
+div.caMediaOverlayControls .close {
+    float:right;
+    width:15px;
+    height:16px;
+    margin: 0 10px 0 20px;
+}
+
+div.caMediaOverlayControls .close a {
+    text-decoration: none;
+}
+
+div.caMediaOverlayControls .download {
+    float:right;
+    margin-left:20px;
+}
+
+div.caMediaOverlayControls .download form a, div.caMediaOverlayControls .download a {
+    font-weight: normal;
+    color:#FFF;
+}
+
+div.caMediaOverlayControls .objectInfo{
+    color:#FFF;
+    padding-left:10px;
+    text-align:left;
+    width:40%;
+    float:left;
+}
+
+div.caMediaOverlayControls .repNav {
+    width: 100px;
+    float:left;
+}
+
+div.caMediaOverlayControls .caRepTools {
+    position: relative;
+    float: right;
+    padding: 0 2% 0 2%;
+    text-align:center;
+    color:#FFF;
+}
+
+#caRepRotationToolPanel {
+    background: #000;
+    display:none;
+    width:300px;
+    height: 100px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+}
+
+#caRepRotationToolPanel .caRepToolsClose{
+    position: absolute;
+    width:15px;
+    height:16px;
+    top: 5px;
+    right: 5px;
+}
+
+#caRepToolsRotateAngleControl {
+    margin-top: 4px;
+    width: 290px;
+    text-align: center;
+}
+
+img.caRepToolsRotateControlButton {
+    border: 1px solid #000000;
+    background: #FFFFFF;
+}
+
+img.caRepToolsRotateControlButtonSelected {
+    border: 1px solid #CC0000;
+    background: #FFFFFF;
+}
+
+img.caRepToolsRotateControlButton:hover {
+    border: 1px solid #999999;
+    background: #FFFFFF;
+}
+
+#caRepToolsRotateProgress {
+    position: absolute;
+    top: 72px;
+    left: 40px;
+    width: 220px;
+    height: 19px;
+    opacity: 0.9;
+
+    display: none;
+    padding: 0;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.caAudioPlayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 32px;
+    margin-top: 16px;
+    margin-left: -300px;
+}
+
+.annotation_media_player {
+    position: relative;
+    width: 600px;
+    height: 32px;
+    margin-top: 16px;
+}
+
+/* overlays (for search results QuickLook) */
+#quickLookPanel {
+    position: fixed;
+    top: 35px;
+    left: 50%;
+    border: 4px solid #ccc;
+    background-color: #FFFFFF;
+    width: 801px;
+    height: 600px;
+    display: none;
+    margin-left: -420px;
+    padding: 7px;
+}
+#quickLookPanel #close{
+    float: right;
+    width:16px;
+    height:16px;
+    margin:0;
+    /*background-image:url("../graphics/buttons/delete.gif");*/
+}
+#quickLookPanel #close a{
+    text-decoration:none;
+}
+
+#quickLookPanelContentArea {
+
+}
+
+#quicklookPanelContentInfo {
+    padding: 10px 0 0 0;
+    text-align:center;
+    height:12px;
+    overflow:hidden;
+}
+#quicklookPanelContentThumbnails{
+    padding: 10px 0 0 0;
+    text-align:center;
+    height:90px;
+    width:800px;
+    overflow:auto;
+}
+#quicklookPanelContentThumbnails img{
+    margin:0 1px 0 1px;
+}
+#quicklookPanelContentThumbnails div{
+    margin:0 auto 0 auto;
+}
+
+/*** EDITOR FORMS ***/
+
+.editorBatchModeControl {
+    float: right;
+    font-weight: normal;
+    margin-top:-3px;
+}
+
+.editorBatchSetEditorLink {
+    float: right;
+}
+
+#editorFieldListHeader {
+    font-weight: bold;
+    text-align: center;
+    color: #666;
+    padding-bottom: 5px;
+}
+#editorFieldList {
+    position: fixed;
+    background: #ffffff;
+    opacity: 0.8;
+    width: 210px;
+    height: 250px;
+    padding: 8px;
+    border: 2px solid #999;
+    top: 0;
+    left: 0;
+
+    z-index: 31000;			/* needs to be on top of menu bar, which has z-index=30000 */
+
+    display: none;
+
+    border-radius: 4px;
+}
+
+a.editorFieldListLink {
+    line-height: 18px;
+}
+
+#editorFieldListContentArea {
+    overflow: auto;
+    text-decoration: none;
+    width: 100%;
+    height: 90%;
+}
+
+#editorFieldList #editorFieldListClose{
+    float: right;
+    width:15px;
+    height:16px;
+    margin:5px;
+}
+
+/* container for HTML code that files #editorFieldList */
+#editorFieldListHTML {
+    display: none;
+}
+
+#caHierarchyOverviewHeader {
+    font-weight: bold;
+    text-align: left;
+    color: #666;
+    margin: 5px;
+    height:16px;
+}
+
+#caHierarchyOverviewPanel {
+    position: fixed;
+    background: #ffffff;
+    opacity: 0.8;
+    width: 920px;
+    height: 380px;
+    padding: 8px;
+    border: 2px solid #999;
+    top: 0;
+    left: 0;
+    z-index: 31000;			/* needs to be on top of menu bar, which has z-index=30000 */
+    display: none;
+    border-radius: 4px;
+}
+
+a.caHierarchyOverviewLink {
+    text-decoration: none;
+    line-height: 18px;
+}
+
+#caHierarchyOverviewContentArea {
+    overflow: auto;
+    text-decoration: none;
+    line-height: 18px;
+
+    width: 100%;
+    height: 90%;
+}
+
+#caHierarchyOverviewPanel #caHierarchyOverviewClose{
+    float: right;
+    width:15px;
+    height:16px;
+    margin:5px;
+}
+
+/* container for HTML code that files #caHierarchyOverviewPanel */
+#caHierarchyOverviewPanelHTML {
+    display: none;
+}
+
+/* formats object representation extracted metadata for multifile metadata display */
+
+div.caMediaOverlayMultifileFileList {
+    overflow: auto;
+    width: 225px;
+    height: 535px;
+}
+
+div.caMediaOverlayMultifileMetadata {
+    background: #ffffff;
+    overflow: auto;
+    width: 565px;
+    height: 515px;
+    padding: 10px 25px 10px 0;
+    line-height: 14px;
+    font-weight: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#primaryRep {
+    border: 3px solid #aaa;
+    margin: 5px 5px 10px 0;
+    padding: 5px;
+}
+
+#multifileRep {
+    border: 3px solid #ccc;
+    margin: 5px 5px 10px 0;
+    padding: 5px;
+}
+
+.filename {
+    font-weight: bold;
+    padding:5px;
+}
+
+/* read-only containers */
+div.caReadonlyContainer {
+    padding: 10px 10px 10px 10px;
+    font-weight: normal;
+    border-bottom: 1px solid
+}
+
+div.caReadonlyContainerDisplay {
+    margin-right: 32px;
+}
+
+a.caReadonlyContainerEditLink {
+    float: right;
+}
+
+/* File and media attribute styles */
+a.attributeDownloadButton {
+    padding: 10px;
+}
+
+div.attributeFileFileName {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+div.attributeMediaThumbnail {
+    width: 90%;
+    /* float: left; */
+}
+
+div.attributeMediaFileName {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+div.attributeMediaInfo {
+    float: right;
+}
+
+.caMappingBase {
+    font-weight:normal;
+}
+
+.caMappingGroupInfo {
+    font-weight:normal;
+    text-align: left;
+}
+
+.caMappingGroupRulesDisplay {
+    margin: 0;
+    padding: 10px;
+    background-color: #eeeeee;
+    display:none;
+    width: 98%;
+}
+
+input.caMappingBase {
+    width: 150px;
+}
+
+.uiMappingHeader {
+    font-weight: bold;
+}
+
+input.externalMappingBase {
+    width: 150px;
+}
+
+/*** hierarchy navigation on editor pages ***/
+.editorHierarchyBrowserContainer{
+    background-color:#fafafa;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border:0 !important;
+}
+.hierarchyBrowserFind{    /*** find box on editor pages ***/
+    color:#666666;
+    font-weight:normal;
+    float:right;
+    margin-right:8px;
+    padding-left:5px;
+}
+.hierarchyBrowserMessageContainer{    /*** message above browser on editor pages ***/
+    padding: 0 8px 0 8px;
+    color:#333;
+    font-weight: normal;
+}
+.hierarchyBrowserNewLocationMessage{ /*** message above browser on editor pages dispaying new location to move record to ***/
+    color: #cc0000;
+    padding:0 5px 15px 0;
+    height:1em;
+}
+
+/*** scrolling header styles ***/
+
+.hierarchyHeaderContent {
+    position:absolute;
+    white-space: nowrap;
+    padding-bottom:5px;
+    top: 0;
+
+}
+.hierarchyHeaderScrollButtons {
+    width:550px;
+    float:left;
+    margin: -12px 100px 0 0;
+    color:#333333;
+    position:relative;
+}
+.hierarchyPanelHeader { /*  used in browse and details with browse */
+    position: relative;
+    margin-bottom: 15px;
+    color:#333333;
+    font-weight:normal;
+    height: 20px;
+    width: 550px;
+    overflow: hidden;
+}
+.hierarchyPanelHeader a { /*  used in browse and details with browse */
+    text-decoration:none;
+    color:#1ab3c8;
+    font-weight:normal;
+    padding-right:4px;
+}
+.prevControl {
+    float: left;
+}
+.nextControl {
+    float:right;
+}
+
+
+/*** FILE DIRECTORY BROWSER ***/
+div.directoryBrowser {
+    border: 1px solid #ccc;
+    width: 715px;
+    height: 300px;
+    margin: 0 0 5px 10px;
+}
+
+div.directoryBrowserVertical {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 200px;
+    margin: 5px 0 2px 0;
+    overflow: auto;
+}
+
+div.directoryBrowserSmall {
+    border: 1px solid #ccc;
+    width: 98%;
+    height: 180px;
+    margin: 5px 0 2px 6px;
+}
+
+div.directoryBrowserLarge {
+    border: 1px solid #000000;
+    width: 100%;
+    height: 400px;
+    margin: 0 0 10px 0;
+}
+
+div.directoryBrowserContainer {
+    position: relative;
+    overflow: auto;
+    overflow-y: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.directoryBrowserContainerVertical {
+    overflow: auto;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+div.directoryBrowserLevel {
+    position: absolute;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    padding: 0 10px 0 0;
+    margin: -1px 0 0 -1px;
+    border: 1px solid #cccccc;
+    background: #FFFFFF;
+    overflow: auto;
+}
+
+div.directoryBrowserLevel li img {
+	height:14px;
+}
+
+div.directoryBrowserLevel li img.disabled {
+	height:10px;
+}
+
+div.directoryBrowserLevelVertical {
+    padding: 0;
+    margin: 5px;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.directoryBrowserLevel ul {
+    padding: 3px;
+    margin: 3px;
+    display:list-item;
+    list-style-type: none;
+    background: none;
+}
+
+.directoryBrowserLevel li {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #cccccc;
+    list-style-type: none;
+    text-align: left;
+    background: none;
+}
+.directoryBrowserLevel a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a.directoryBrowserLevelSelected {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+}
+
+a.directoryBrowserLevelEditButton {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.directoryBrowseTab {
+    height: 245px;
+    width: 712px;
+    overflow: hidden;
+    font-weight: normal;
+    margin-left:-10px;
+}
+
+div.directoryBrowserCurrentSelection {
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+span.directoryBrowserCurrentSelectionText {
+    font-weight: normal;
+}
+
+/*  SEARCH FORM EDITOR  */
+.searchFormElementEditor {
+    border: 1px dashed #aaaaaa;
+    padding: 10px;
+}
+
+.searchFormElementEditor table td {
+    padding: 5px;
+}
+
+.searchFormElementEditorFieldList {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.searchFormElementEditorGroupHeading {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.searchFormElementEditorRemoveGroupButton {
+    margin-right: 5px;
+}
+
+.searchFormElementEditorGroup {
+    padding: 10px 0 10px 0;
+    border-top: 1px dotted #aaaaaa;
+}
+
+.searchFormElementEditorAddElementButton {
+    margin-right: 5px;
+}
+
+div.searchFormEditorElementList {
+    margin-left: 25px;
+    line-height: 25px;
+    color: #333333;
+    font-weight: normal;
+}
+
+select.searchFormEditorElementList {
+    margin-left: 25px;
+}
+
+div.searchFormElementEditorElement {
+    background-color: #cccccc;
+    margin: 5px 0 5px 0;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #999999;
+}
+
+.searchFormElementEditorEditElementButton {
+    padding: 1px;
+}
+
+.searchFormElementEditorRemoveElementButton {
+    padding: 1px;
+}
+
+div.searchFormElementEditorContainer {
+    padding: 5px 0 0 10px;
+}
+
+a.searchFormElementEditorAddGroupButton {
+    text-decoration: none;
+}
+
+div.searchFormElementEditorAddGroupButton {
+    padding: 10px 0 10px 0;
+    border-top: 1px dotted #aaaaaa;
+}
+
+div.searchFormElementEditorGroupList {
+    width: 360px;
+}
+
+div.searchFormElementEditorSettingsPanel {
+    width:300px;
+    min-height: 200px;
+    padding: 5px 10px 5px 10px;
+    overflow: auto;
+    background-color: #ffffff;
+    border: 1px dotted #aaaaaa;
+}
+
+div.searchFormElementSettingsMessage {
+    width:290px;
+}
+
+/* SEARCH FORMS */
+
+/* Search form "group mode" */
+div.searchFormGroupModeContainer {
+    width: 610px;
+    padding: 3px;
+    overflow: auto;
+}
+
+.searchFormGroupElementModeElement {
+    text-align: left;
+}
+
+div.searchFormGroupModeGroupContainer {
+    background-color: #cccccc;
+    border-top: 1px dotted #333333;
+    padding: 3px;
+}
+
+div.searchFormGroupModeGroup {
+    width: 100%;
+    background-color: #cccccc;
+    padding: 0;
+}
+
+div.searchFormGroupModeElement {
+    float: left;
+    text-align: left;
+    padding: 5px;
+}
+
+.searchFormGroupModeMinimizeButton {
+    float: right;
+}
+
+/* Colorpicker styles */
+.colorpicker {
+    width: 356px;
+    height: 176px;
+    overflow: hidden;
+    position: absolute;
+    /*background: url(../graphics/colorpicker/colorpicker_background.png);*/
+    display: none;
+    z-index: 200000;
+}
+.colorpicker_color {
+    width: 150px;
+    height: 150px;
+    left: 14px;
+    top: 13px;
+    position: absolute;
+    background: #f00;
+    overflow: hidden;
+    cursor: crosshair;
+}
+.colorpicker_color div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    /*background: url(../graphics/colorpicker/colorpicker_overlay.png);*/
+}
+.colorpicker_color div div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    overflow: hidden;
+    /*background: url(../graphics/colorpicker/colorpicker_select.gif);*/
+    margin: -5px 0 0 -5px;
+}
+.colorpicker_hue {
+    position: absolute;
+    top: 13px;
+    left: 171px;
+    width: 35px;
+    height: 150px;
+    cursor: n-resize;
+}
+.colorpicker_hue div {
+    position: absolute;
+    width: 35px;
+    height: 9px;
+    overflow: hidden;
+    /*background: url(../graphics/colorpicker/colorpicker_indic.gif) left top;*/
+    margin: -4px 0 0 0;
+    left: 0;
+}
+.colorpicker_new_color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 213px;
+    top: 13px;
+    background: #f00;
+}
+.colorpicker_current_color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 283px;
+    top: 13px;
+    background: #f00;
+}
+.colorpicker input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    color: #898989;
+    top: 4px;
+    right: 11px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    height: 11px;
+}
+.colorpicker_hex {
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    /*background: url(../graphics/colorpicker/colorpicker_hex.png) top;*/
+    left: 212px;
+    top: 142px;
+}
+.colorpicker_hex input {
+    right: 6px;
+}
+.colorpicker_field {
+    height: 22px;
+    width: 62px;
+    background-position: top;
+    position: absolute;
+}
+.colorpicker_field span {
+    position: absolute;
+    width: 12px;
+    height: 22px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    cursor: n-resize;
+}
+.colorpicker_rgb_r {
+    /*background-image: url(../graphics/colorpicker/colorpicker_rgb_r.png);*/
+    top: 52px;
+    left: 212px;
+}
+.colorpicker_rgb_g {
+    /*background-image: url(../graphics/colorpicker/colorpicker_rgb_g.png);*/
+    top: 82px;
+    left: 212px;
+}
+.colorpicker_rgb_b {
+    /*background-image: url(../graphics/colorpicker/colorpicker_rgb_b.png);*/
+    top: 112px;
+    left: 212px;
+}
+.colorpicker_hsb_h {
+    /*background-image: url(../graphics/colorpicker/colorpicker_hsb_h.png);*/
+    top: 52px;
+    left: 282px;
+}
+.colorpicker_hsb_s {
+    /*background-image: url(../graphics/colorpicker/colorpicker_hsb_s.png);*/
+    top: 82px;
+    left: 282px;
+}
+.colorpicker_hsb_b {
+    /*background-image: url(../graphics/colorpicker/colorpicker_hsb_b.png);*/
+    top: 112px;
+    left: 282px;
+}
+.colorpicker_submit {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    /*background: url(../graphics/colorpicker/colorpicker_submit.png) top;*/
+    left: 322px;
+    top: 142px;
+    overflow: hidden;
+}
+.colorpicker_focus {
+    background-position: center;
+}
+.colorpicker_hex.colorpicker_focus {
+    background-position: bottom;
+}
+.colorpicker_submit.colorpicker_focus {
+    background-position: bottom;
+}
+.colorpicker_slider {
+    background-position: bottom;
+}
+
+.colorpicker_chip {
+    width: 64px;
+    height: 24px;
+    border: 2px solid #333333;
+}
+
+/*  BUNDLE DISPLAY EDITOR  */
+div.bundleDisplayPlacementEditorContainer {
+    padding: 5px 10px 10px 15px;
+    background-color:#fbfbfb;
+}
+
+.bundleDisplayPlacementEditor {
+    padding: 0;
+}
+
+.bundleDisplayPlacementEditorHelpText {
+    font-weight:normal;
+    size:11px;
+    padding:5px 0 10px 0;
+    margin:0;
+}
+div.bundleDisplayEditorPlacement {
+    padding: 5px 10px 3px 10px;
+    width: 300px;
+    margin: 5px 5px 10px 0;
+    font-weight: normal;
+    border: 1px solid #e3e3e3;
+    background: #f1f1f1 no-repeat 98% 50%;
+    border-radius: 3px;
+    background-size:14px 14px;
+}
+div.bundleDisplayEditorPlacement .fa {
+	margin-top:-4px;
+}
+div.bundleDisplayEditorPlacement img{
+	width:16px;
+	margin-top: -1px;
+}
+div.bundleDisplayEditorPlacementList {
+    width: 350px;
+    height: 450px;
+    overflow: auto;
+    margin-right:10px;
+}
+
+.ui-tooltip-content h2 {
+	margin:0;
+	padding:0 0 5px 0;
+	color:#fff;
+	font-weight:normal;
+	text-align:left;
+}
+.elementSettingsUI {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	overflow: auto;
+	width: 500px;
+	max-height:500px;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 5px #888;
+	z-index:10000;
+}
+.elementSettingsUI a{
+	float:right;
+}
+.elementSettingsUI img{
+	width:16px;
+}
+.elementSettingsUI textarea  {
+	width:340px;
+}
+a.bundleDisplayPlacementEditorAddButton {
+    text-decoration: none;
+}
+
+.bundleDisplayPlacementEditorEditButton {
+    padding: 1px;
+    text-decoration: none;
+}
+
+.bundleDisplayPlacementEditorRemoveButton {
+    padding: 1px;
+    text-decoration: none;
+}
+
+div.bundleDisplayPlacementEditorSettingsPanel {
+    width:300px;
+    min-height: 200px;
+    padding: 5px 10px 5px 10px;
+    overflow: auto;
+    background-color: #ffffff;
+    border: 1px dotted #aaaaaa;
+}
+
+div.bundleDisplayPlacementEditorSettingsMessage {
+    width:290px;
+}
+
+div.bundleDisplayTemplateKey {
+    font-weight: normal;
+    color: #000000;
+}
+
+/* UI Editor styles */
+
+#InterfaceEditorForm .caItemList .labelInfo{
+	padding: 3px 5px 3px 5px;
+}
+table.uiScreenItem {
+    width: 100%;
+    border-bottom: #ddd dashed 1px;
+}
+table.uiScreenItem .fa{
+	padding-left:5px;
+}
+
+/* Dashboard styles */
+
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+.ui-sortable-placeholder * { visibility: hidden; }
+
+/* Georeference attribute value styles */
+.map div, .search_suggest div, .labelInfo .search_suggest{
+    margin-top:0;
+}
+
+.map {
+    margin: 0;
+    padding: 0;
+}
+
+.mapSearchBox {
+    padding: 0;
+    margin: 0;
+}
+
+.mapSearchText {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.mapCoordinateDisplay {
+    background-color: transparent;
+    border: none;
+    width: 688px;
+    padding: 3px;
+    margin: 4px 0 0 0;
+}
+
+/* Generic table styles */
+.tableWithBorder {
+    border-collapse: collapse;
+}
+
+.tableWithBorder {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+/* Classes used in access control user role administration */
+.roleCheckGroupHeading {
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+/* ------------- */
+/* ca_object_representation_media_display bundle styles */
+/* ------------- */
+
+.objectRepresentationMediaDisplayDerivativeOptions {
+    display: none;
+    margin: 10px;
+    padding: 5px;
+    background-color: #eeeeee;
+    font-weight: normal;
+}
+
+.objectRepresentationMediaDisplayDerivativeHeader {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Relationship display */
+
+li.quickaddMenuItem {
+	background-color: #eee;
+	border-top: 2px solid #aaa;
+	margin-top: 15px;
+}
+
+a.quickaddMenuItem {
+	font-style: italic;
+	border-radius: 0;
+}
+
+div.caItemLoadNextBundles {
+	padding: 10px;
+}
+
+a.caItemLoadNextBundles {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.caItemLoadNextBundlesLoadIndicator {
+	display: none;
+	margin-left: 12px;
+}
+
+div.preferenceSectionDivider {
+    height: 2px;
+    background-color: #cccccc;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+a.preferenceColumnSelector {
+    color: #222222;
+    text-decoration: underline;
+}
+
+table.preferenceColumnSelector {
+	text-align: center;
+	width: 500px;
+	margin: 10px 0 10px 0;
+}
+
+table.preferenceColumnSelector tbody tr td.preferenceColumnSelectorLabel {
+	text-align: left;
+	width: 300px;
+}
+
+div.preferenceColumnHeader {
+    color: #333;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+div.preferencePlacementList {
+    width: 350px;
+    height: 350px;
+    overflow: auto;
+    margin-right:10px;
+}
+
+.searchReindexHelpText{
+    padding:20px;
+    margin:20px;
+    line-height:1.3em;
+	background-color: #f7f7f7;
+	border-radius: 4px;
+}
+
+.searchReindexStatus {
+    color: #828282;
+    text-align: center;
+    padding: 10px;
+    line-height:1.3em;
+    overflow: hidden;
+}
+
+.searchReindexElapsedTime {
+    float: right;
+    margin-top: 5px;
+}
+
+.searchReindexTableProgressGroup {
+    margin-bottom: 10px;
+}
+
+.batchProcessingHelpText{
+    padding:20px;
+    margin:20px;
+    border:3px solid #cccccc;
+}
+
+.batchProcessingStatus {
+    color: #828282;
+    text-align: left;
+    padding: 10px;
+    line-height:1.3em;
+    overflow: hidden;
+    height: 2.4em;
+}
+
+#batchProcessingElapsedTime {
+    float: left;
+}
+
+#batchProcessingCounts {
+    float: right;
+}
+
+#batchProcessingFileCount {
+    float: right;
+}
+
+.batchProcessingTableProgressGroup {
+    margin-bottom: 10px;
+}
+
+#batchProcessingReport {
+    border: 1px dotted #000000;
+
+    width: 720px;
+    min-height: 30px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    display: none;
+}
+
+.batchProcessingReportSectionHead {
+    font-weight: bold;
+}
+
+.batchProcessingReportSectionWarning {
+    font-style: italic;
+    margin: 10px 0 10px 0;
+}
+
+#batchProcessingReport ol, #batchProcessingReport ul {
+    line-height: 1.3em;
+}
+
+#batchProcessingMore {
+    display: none;
+    text-align: center;
+}
+
+.batchProcessingHelpText{
+    padding:20px;
+    margin:20px;
+    line-height:1.3em;
+    border:3px solid #cccccc;
+}
+img.batchIcon {
+	margin-left:8px;
+}
+.caDeleteLabelButton img, .caDeleteItemButton img{
+	width:14px;
+	margin-right:3px;
+}
+a.caDeleteLabelButton {
+    text-decoration: none;
+}
+
+/* Application monitor styles */
+#caApplicationMonitor {
+    border: 2px solid #999;
+    display: none;
+    overflow: auto;
+    width: 900px;
+    height: 500px;
+    position: fixed;
+    top: 100px; left: 50%; margin: 0 0 0 -450px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+
+/* -------------------------------------------------*/
+/* "Searchlight" autocomplete search results styles */
+/* -------------------------------------------------*/
+div.searchlight-header{
+    size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#333333;
+    background-color:#E4E4E4;
+    padding:3px;
+}
+div.searchlight-item{
+    size:12px;
+    color:#333333;
+    padding:3px 3px 8px 3px;
+    background-color:#FFFFFF;
+}
+div.searchlight-item a{
+    size:12px;
+    color:#333333;
+    text-decoration:none;
+}
+div.searchlight-item a:hover{
+    text-decoration:underline;
+}
+div.searchlight-results-wrapper {
+    color: #333333;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    width: 180px;
+    margin: 16px 0 0 0;
+    position: fixed;
+}
+div.searchlight-results div.searchlight-selected {
+    background: #333;
+    color: #fff;
+}
+#caClientOrderOverview .loanTitle {
+    font-weight: bold;
+    color: #333;
+    padding: 0 5px 0 5px;
+}
+#caClientOrderOverview td {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px 5px 10px;
+}
+#caClientOrderOverview table {
+    width: 100%;
+}
+.titleTd td{
+    border-left: 1px solid #333;
+}
+.orderTotal {
+    font-weight: bold;
+    text-transform: uppercase;
+    float:right;
+    padding: 5px 0 0 0;
+    clear:both;
+}
+.overdue {
+    color: red;
+}
+
+/* OpenLayers */
+
+.olMap {
+    background-color: #999999;
+    clear:left;
+}
+
+.olControlDelete {
+    position: absolute;
+    /*background-image: url(../graphics/icons/map_delete.png);*/
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 22px;
+}
+.olControlDelete:hover {
+    position: absolute;
+    /*background-image: url(../graphics/icons/map_delete_selected.png);*/
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 22px;
+}
+
+.olControlDeleteItemActive {
+    position: absolute;
+    /*background-image: url(../graphics/icons/map_delete.png);*/
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 22px;
+}
+.olControlDeleteItemActive:hover {
+    position: absolute;
+    /*background-image: url(../graphics/icons/map_delete_selected.png);*/
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 22px;
+}
+
+.olControlDeletePanel {
+    border: 0 solid black;
+    bottom: 5px;
+    right: 5px;
+    width: 24px;
+    height: 22px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.olMapKmlControl {
+    float: left;
+    position: relative;
+    width: 150px;
+    height:30px;
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+
+.olMapSearchBox {
+    float: right;
+    position: relative;
+    /*background:	url(../graphics/backgrounds/searchbox.png) no-repeat bottom right;*/
+    width: 150px;
+    height:30px;
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+
+.olMapSearchBoxIcon {
+    margin: 12px 8px 0 0;
+}
+
+.olMapSearchBox input {
+    outline-style:none;
+    border: none;
+}
+
+.olMapSearchContainer {
+    float:			right;
+    margin:			0;
+    padding-right:	0;
+    list-style:		none;
+    line-height:	1.0;
+}
+
+.olMapSearchText {
+    padding:1px 3px 3px 3px;
+    font-weight:normal;
+    border: 0;
+    width: 100px;
+    height:12px;
+    float:left;
+    margin:9px 0 0 23px;
+    outline-style:none;
+}
+
+.olMapKMLInput {
+    display: none;
+    margin-top: 18px !important;
+}
+.olMap {
+    clear:left;
+}
+
+.olPopup {
+    border: 1px solid #000000 !important;
+    border-radius:8px !important;
+    box-shadow: 4px 4px 10px rgba(75, 75, 75, 0.75) !important;
+}
+
+.olPopupCloseBox {
+    width:15px  !important;
+    height:16px  !important;
+    margin:0 !important;
+}
+
+.olPopupContent {
+    margin-left: 10px !important;
+    margin-top: 0 !important;
+    padding: 0 5px 5px 5px !important;
+}
+
+/* Batch confirmation change */
+#caConfirmBatchExecutionPanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 550px;
+    display: none;
+    margin: 0;
+    padding:0 !important;
+    border: 2px solid #999999;
+    z-index: 31000;			/* needs to be on top of menu bar, which has z-index=30000 */
+    background-color: #FFFFFF;
+}
+
+#caConfirmBatchExecutionPanelContentArea {
+    padding:10px;
+}
+
+#caConfirmBatchExecutionPanelControlButtons {
+    width: 490px;
+    text-align: center;
+}
+
+#caConfirmBatchExecutionPanelControlButtons table {
+    width: 100%;
+}
+
+.caConfirmBatchExecutionPanelAlertText {
+    padding: 15px;
+}
+
+.caConfirmBatchExecutionPanelAlertControls {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+table.caConfirmBatchExecutionPanelAlertControls {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Quick add */
+.caRelationQuickAddPanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 900px;
+    height: 600px;
+    overflow: auto;
+    display: none;
+    margin: 0;
+    padding:0 !important;
+    border: 2px solid #999999;
+    z-index: 31000;			/* needs to be on top of menu bar, which has z-index=30000 */
+    background-color: #FFFFFF;
+}
+
+#caRelationQuickAddPanelContentArea {
+    padding:10px;
+}
+
+#caRelationQuickAddPanelControlButtons {
+    width: 100%;
+    text-align: center;
+}
+
+#caRelationQuickAddPanelControlButtons table {
+    width: 100%;
+}
+
+div.quickAddFormTopPadding {
+    height: 40px;
+}
+
+div.quickAddDialogHeader {
+    background-color: #cccccc;
+    font-weight: bold !important;
+    padding: 5px;
+    width: 100%;
+    z-index:33000;
+}
+
+div.quickAddTypeList {
+    float: left;
+    margin-top: 6px;
+}
+
+div.quickAddControls {
+	float: right;
+}
+
+div.quickAddProgress {
+    float: right;
+    margin: 6px 70px 0 0;
+}
+
+input[type='text'].ui-autocomplete-loading {
+    /*background: white url('../graphics/icons/indicator.gif') right center no-repeat;*/
+}
+
+div.componentAddTypeList {
+    float: left;
+    margin-top: 6px;
+}
+
+/** Debug **/
+
+div.debug {
+    padding: 10px 10px 10px 10px;
+    background-color:#EEEEEE;
+    margin-bottom: 10px;
+}
+
+div.debugLabel {
+    color: green;
+    font-weight: bold;
+}
+
+/** Visualization **/
+.vizFullScreen {
+    background-color: #000000;
+}
+
+.vizTitle {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/*  Media representation chooser (bundle ca_object_representation_choose)  */
+div.caObjectRepresentationChooserContainer {
+    margin: 4px 2px 2px 2px;
+    padding: 5px 10px 10px 15px;
+    background-color:#fbfbfb;
+}
+
+div.caObjectRepresentationChooserRepresentation {
+    position: relative;
+    float: left;
+    margin: 4px;
+    width: 170px;
+    height: 170px;
+}
+
+div.caObjectRepresentationChooserRepresentation input[type=checkbox] {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+/* Information service attributes */
+div.caInformationServiceDetail {
+    width: 100%;
+    display:none;
+    font-weight: normal;
+    margin-left: 8px;
+}
+
+a.caInformationServiceMoreLink {
+    display: none;
+    text-decoration: none;
+}
+
+/* LCSH attributes */
+a.caLCSHServiceMoreLink {
+    display: none;
+    text-decoration: none;
+}
+
+/* Media replication */
+table.caRepresentationMediaReplicationStatusTable {
+    width: 75%;
+}
+
+div.caRepresentationMediaReplicationTargetList {
+    margin: 0 0 10px 0;
+}
+
+span.caRepresentationMediaReplicationLoadIcon {
+    display: none;
+}
+
+div.caRepresentationMediaReplication {
+    text-align:left;
+    display: none;
+    padding: 3px;
+}
+
+a.caRepresentationMediaReplicationButton {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+div.caRepresentationMediaReplicationControls {
+    width: 680px;
+    overflow: auto;
+    padding: 8px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #000000;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+ /* Metadata Export */
+
+ #exporterUploadArea {
+ 	border: 1px dashed #ccc;
+ 	display:none;
+ 	color:#333;
+ 	text-align: center;
+	padding: 10px;
+ }
+.ui-progressbar {
+	border:1px solid #eeeeee !important;
+}
+
+/**
+ *
+ * Annotation editor
+ *
+ **/
+.caAnnoEditorPanel {			/* full-window panel */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    padding:0 !important;
+    border: 2px solid #999999;
+    z-index: 31000;			/* needs to be on top of menu bar, which has z-index=30000 */
+    background-color: #ededed;
+}
+.caAnnoEditorTlContainer {		/* timeline container */
+    width:100%;
+    height: 130px;
+    border-bottom:1px solid #FFFFFF;
+    background-color:#ededed;
+}
+.caAnnoEditorTlInfo {
+    float:left;
+    width: 90px;
+    height: 90px;
+    background-color:#dedede;
+    clear:left;
+    position:relative;
+    outline: 2px solid #dedede;
+}
+.caAnnoEditorTlInfo div.caAnnoEditorInfo {
+    margin:5px 5px 0 5px;
+    height: 20px;
+}
+.caAnnoEditorTlSlider {
+	margin: 15px 0 0 0;
+}
+.caAnnoEditorTlSyncControl {
+    position:absolute;
+    right: 3px;
+    bottom: 3px;
+}
+.caAnnoEditorTl {
+    margin: 0 10px 0 95px;
+}
+.caAnnoEditorTlAnnotationContainer {
+	position: relative;
+    margin: 0 3px 0 3px;
+    border: 2px solid #fff;
+    background-color:#fff;
+    height: 88px;
+    border-radius: 3px;
+}
+
+.caAnnoEditorTlAnnotationContainer:hover, .caAnnoEditorTlAnnotationContainer:focus {
+    border-color: #808080;
+}
+.caAnnoEditorTlAnnotationContainerSelected {
+    border: 2px solid #cc0000;
+}
+.caAnnoEditorTlAnnotationContainer div.title {
+    margin:3px 3px 0 3px;
+    height:35px;
+    overflow:hidden;
+}
+.caAnnoEditorTlAnnotationContainer div.timecode a {
+    margin:5px 5px 0 5px;
+    position:relative;
+}
+.caAnnoEditorTlAnnotationContainer div.editAnnoButton {
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+}
+.caAnnoEditorTlAnnotationContainer div.deleteAnnoButton {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+
+.caAnnoEditorPlayerAndFormContainer {
+	position: relative;
+}
+
+.caAnnoMediaPlayerContainer {	/*  media player container */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+    width: 500px;
+    height: 375px;
+
+	/*background-image: url(../graphics/icons/audio.png);*/
+	/*background-position: center center;*/
+	/*background-repeat:no-repeat;*/
+    background-color: #000;
+}
+.caAnnoEditorMediaPlayer {
+	width: 500px;
+    margin: auto auto 0 auto;
+}
+.caAnnoEditorAudioMediaPlayer {
+	margin-top: 343px;
+}
+.caAnnoEditorVideoMediaPlayer {
+
+}
+.caAnnoMediaPlayerControlsLeft {
+	float: left;
+	padding: 10px;
+}
+.caAnnoMediaPlayerControlsRight {
+	float: right;
+	padding: 10px;
+}
+
+.caAnnoEditorEditorScreen {
+	position: absolute;
+	top: 0;
+	left: 515px;
+
+	width: 720px;
+	height: 500px;
+	overflow: auto;
+	margin: 0 10px 0 0;
+	background-color: #ededed;
+}
+.caAnnoEditorInfo {
+    font-weight: bold;
+}
+.caAnnoEditorTlSliderInfo {
+	display: none;
+	position: absolute;
+	top: -6px;
+	left: 15px;
+	min-width: 60px;
+	padding: 5px 5px 5px 10px;
+	line-height:1em;
+	white-space:nowrap;
+	color:#FFFFFF;
+}
+
+/** Tool plugins **/
+.toolPluginHelpText {
+    margin: 5px 0 5px 0;
+}
+
+/** Object location tracking **/
+.caCurrentLocation {
+	padding: 10px;
+	margin-right: 12px;
+}
+
+div.caLocationHistory {
+	border-top: 1px dotted #e6e6e6;
+	padding: 10px;
+	margin-right: 12px;
+}
+
+div.caLocationHistoryTab {
+	max-height: 400px;
+	overflow: auto;
+}
+
+/** Object use history **/
+div.caUseHistoryEntry {
+	position: relative;
+	display: table;
+	overflow: hidden;
+	font-weight: normal;
+	width: 730px;
+	margin: 5px 0 0 5px;
+	padding: 5px 0 5px 0;
+	border-top: 1px dotted #e6e6e6;
+}
+
+div.caUseHistoryEntryFirst {
+	border: none;
+}
+
+div.caUseHistoryButtonBar {
+	padding: 10px;
+}
+
+.caChangeLocationButton, .caAddLoanButton, .caAddOccurrenceButton {
+	margin-top: 5px;
+}
+
+div.caUseHistoryIconContainer {
+	float: left;
+	display: table;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+
+	border: 2px solid #333;
+    border-radius: 5px;
+
+	margin: 0 10px 0 0;
+}
+
+div.caUseHistoryIcon {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.caUseHistoryIconText {
+	text-align: center;
+	font-style: italic;
+}
+
+div.caUseHistoryDate {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	font-style: italic;
+}
+
+h2.caUseHistorySetLocationHeading {
+	float: left;
+}
+
+div.caUseHistoryHierarchyBrowser {
+	border-top: 2px;
+}
+
+table.caUseHistoryUpdateLocationMetadata tr td {
+	vertical-align: middle;
+}
+
+/** Metadata dictionary **/
+.caMetadataDictionaryDefinition {
+	padding: 10px;
+	background-color: #fff;
+    border: 2px solid #e6e6e6;
+	font-weight: normal;
+	position:absolute;
+	top:20px;
+	right:-30px;
+	width:400px;
+	z-index:10;
+	text-align:left;
+	display: none;
+}
+
+div.caMetadataDictionaryViolationsList {
+	padding: 10px;
+	background-color: #fff;
+	margin: 0 0 0 15px;
+	width: 33%;
+    border: 2px solid #e6e6e6;
+	float: right;
+}
+
+div.caMetadataDictionaryViolationsList ol {
+	list-style:none;
+    padding-left:0;
+}
+
+div.caMetadataDictionaryViolationsListHeading {
+	font-weight: bold;
+}
+
+.caMetadataDictionaryViolationCrit {
+	font-weight: bold;
+	color: Red;
+}
+
+.caMetadataDictionaryViolationErr {
+	color: Red;
+}
+
+.caMetadataDictionaryViolationWarn {
+	color: GoldenRod
+}
+
+.caMetadataDictionaryViolationNote {
+	color: Blue;
+}
+
+.caMetadataDictionaryViolationDebg {
+	color: #333;
+}
+
+/** Metadata importer **/
+table.caFileSourceControls {
+	width: 700px
+}
+
+td.caFileSourceControls {
+	vertical-align: top;
+	padding-top: 4px;
+}
+
+td.caSourceFileControlRadio {
+	vertical-align: top;
+	width: 30px;
+	height: 35px;
+}
+
+/** Metadata export preview **/
+.caExportPreview {
+    max-height: 250px;
+    overflow: scroll;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+
+/** Library checkout **/
+div.caLibraryUIContainer {
+	position: relative;
+}
+
+div.caLibraryFindAutocompleteContainer {
+	margin: 100px 0 25px 0;
+	text-align: center;
+}
+
+div.caLibraryFindAutocompleteLabel {
+	margin: 0 0 10px 0;
+}
+
+div.caLibraryTransactionListContainer {
+	display: none;
+}
+
+div.caLibraryTransactionResultsContainer {
+	display: none;
+}
+
+div.caLibraryTransactionListLabel {
+	font-weight: bold;
+}
+
+div.caLibraryTransactionListItemContainer {
+	position: relative;
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 4px;
+	margin: 5px 0 0 0;
+}
+
+div.caLibraryTransactionListItemMedia {
+	float: left;
+	margin: 0 10px 0 0;
+	width: 72px;
+	height: 72px;
+}
+
+div.caLibraryTransactionListItemName {
+	font-style: italic;
+}
+
+div.caLibraryTransactionListItemNotesContainer {
+	margin: 3px;
+}
+
+div.caLibraryTransactionListItemRemoveButton {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+div.caLibrarySubmitListContainer {
+	text-align: center;
+}
+
+div.caLibraryTransactionResultsContainer {
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 4px;
+	margin: 25px 0 0 0;
+}
+
+div.caLibraryTransactionResultsLabel {
+	font-weight: bold;
+}
+
+div.caLibraryTransactionListItemDueDateContainer {
+	margin: 0 0 0 82px;
+}
+
+div.caLibraryTransactionListItemWillReserve {
+	color: #cc0000;
+	font-weight: bold;
+}
+
+table.caLibraryHistory, tr.caLibraryHistory, th.caLibraryHistory, td.caLibraryHistory {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+#leftNav div.caLibraryCheckoutList {
+	margin: 10px 0 0 0;
+}
+
+#leftNav ul.caLibraryCheckoutList {
+	list-style: circle;
+	margin: 0 0 0 15px;
+	padding: 3px 0 3px 0;
+	display:block;
+}
+
+div.caLibraryDashboardPanel {
+	float: left;
+	border: 1px solid #333;
+	padding: 10px;
+	border-radius: 4px;
+	width: 400px;
+	min-height: 100px;
+	margin: 10px 10px 10px 0;
+}
+
+.caLibraryDashboardCallout {
+	font-weight: bold;
+	margin: 0;
+}
+
+.caLibraryDashboardCalloutDate {
+	font-weight: normal;
+	font-style: italic;
+	margin: 0;
+}
+
+.caLibraryDashboardUserList {
+	font-weight: normal;
+	line-height: 18px;
+	margin: 12px 0 0 0;
+}
+
+#caLibraryDashboardDetailContainer {
+	clear: both;
+	border: 1px solid #333;
+	padding: 10px;
+	border-radius: 4px;
+	width: 832px;
+	min-height: 100px;
+	margin: 10px 10px 10px 0;
+}
+
+.authorityReferenceList ul  {
+	list-style-type: none;
+	padding: 0;
+	margin: 10px 0 0 5px;
+}
+
+.authorityReferenceList ul li {
+	padding: 0;
+	margin: 10px 0 0 5px;
+}
+
+div.authorityReferenceListContainer {
+	width: 100%;
+	overflow-y: hidden;
+	min-height: 200px;
+}
+
+/* Media viewer */
+#caMediaPanelProgress {
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+}
+
+#caMediaOverlayProgress {
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 30px;
+	z-index: 99000;
+	opacity: 0.8;
+}
+
+#caMediaOverlayProgress div {
+	position: relative;
+	left: -50%;
+	top: -50%;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #999;
+}
+
+
+/**
+ *
+ * FontAwesome icon styles
+ *
+ */
+.caIcon {
+	color :#000;
+	text-decoration: none;
+	vertical-align: -15%;
+}
+
+.caNavHeaderIcon {
+	float: right;
+	margin: 0 0 0 5px;
+}
+
+.caIcon:hover {
+	color: #1ab3c8;
+}
+
+.caIconRed {
+	color: #cc0000;
+}
+
+.infoIcon {
+	padding-left:5px;
+	line-height:8px !important;
+}
+
+/* set items list in set editor */
+.setItemCounter{
+	float:left;
+	background-color:#bbb;
+	color:#FFF;
+	border-radius: 6px;
+	padding:3px 4px 1px 4px;
+	line-height:1em;
+	font-weight:normal;
+	margin:5px 0 0 5px;
+}
+
+#toolIcons > div {
+    display: inline-block;
+}

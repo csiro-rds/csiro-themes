@@ -1,0 +1,47 @@
+@import "../../../less/variables.less";
+
+@border-width: 1px;
+
+.component-bundle-object-representations {
+    .representation {
+        margin-bottom: @padding-base-vertical;
+    }
+
+    .image-properties, .image-options {
+        padding-right: @padding-xl-horizontal;
+    }
+
+    .centreMarker {
+        font-size: @font-size-h1;
+        color: red;
+    }
+
+    .caObjectRepresentationMetadataContainer {
+        padding-bottom: 2 * @padding-xl-vertical;
+    }
+
+    .caObjectRepresentationSetCenterContainer {
+        position: relative;
+        text-align: center;
+        margin: auto;
+    }
+
+    #caObjectRepresentationSetCenterMarker {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .metadata-item {
+        &:not(:last-child) {
+            padding-bottom: @padding-base-vertical;
+        }
+
+        h3:extend(label) {
+            display: block;
+        }
+
+        table th:extend(label) {
+        }
+    }
+}

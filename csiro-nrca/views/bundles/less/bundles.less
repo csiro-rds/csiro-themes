@@ -1,0 +1,83 @@
+.component.component-bundle {
+    .bundle-list-container .display-item:extend(.well):extend(.well-sm) {
+        margin: 0 0 @padding-small-vertical 0;
+    }
+
+    .relationship-controls {
+        font-size: @font-size-small;
+
+        select {
+            display: inline-block;
+            width: auto;
+            font-size: @font-size-small;
+        }
+    }
+
+    .related-item {
+        .glyphicon-menu-hamburger {
+            transform: rotate(90deg);
+        }
+
+        &.list:extend(.well):extend(.well-sm) {
+            margin: @padding-small-vertical 0;
+            padding: @padding-small-vertical @padding-small-horizontal;
+
+            button.remove {
+                float: right;
+            }
+        }
+
+        &.bubbles {
+            display: inline-block;
+            padding: @padding-base-vertical @padding-base-horizontal;
+            border: 1px solid @btn-default-border;
+            border-radius: @border-radius-base;
+            margin: @padding-base-vertical @padding-base-horizontal 0 0;
+        }
+    }
+
+    .repeating-item,
+    .related-item,
+    .related-item-location,
+    .related-loan,
+    .occurrence-list-item {
+        .elements-container {
+            display: inline-block;
+
+            &.removable {
+                width: ~"calc(100% - 20px)"; // TODO fix hardcoded 20px
+            }
+        }
+
+        .remove {
+            float: right;
+        }
+    }
+}
+
+.component-directory-browser {
+    height: @hierarchy-browser-height;
+}
+
+/**
+ Less for the geo form
+ */
+#geoForm {
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    #ddmm,
+    #ddmmss,
+    #ddmmdec {
+        .latitude,
+        .longitude {
+            .col-md-4 {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.not.accessible:extend(.text-warning){}

@@ -1,0 +1,100 @@
+body {
+    margin: @padding-large-vertical 0;
+}
+
+section#sidebar {
+    float: left;
+    margin-left: 0;
+    width: @sidebar-width;
+    padding-right: @padding-large-horizontal;
+    position: relative;
+
+    body.sidebar-collapsed & {
+        margin-left: -@sidebar-width;
+    }
+
+    body.animate & {
+        transition:  all 0.3s;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+}
+
+section#main-content {
+    .full{
+        box-sizing: initial;
+        float: left;
+        clear: none;
+        width: 99%;
+        &.sidebar-collapse {
+            vertical-align: middle;
+            padding: 0;
+            margin-left: -@padding-base-horizontal;
+            z-index: @zindex-modal-background;
+            position: relative;
+            .btn-sm{
+                font-size: @font-size-xs;
+                padding:0;
+                background-color: @gray-lighter;
+                // ie < 11
+                height: 500px;
+                // viewport
+                height: 98.5vh;
+            }
+            width: 1%;
+        }
+
+    }
+    body.animate &{
+        transition:  all 0.3s;
+    }
+    float: left;
+    width: ~"calc(100% - 320px)";
+    body.sidebar-collapsed &{
+        width: 100%;
+    }
+    position: relative;
+}
+
+// TODO Can we just not use headings in the sidebar?
+aside .sf-menu {
+    h2,
+    h3 {
+        line-height: @line-height-base;
+        font-size: @font-size-base;
+        font-weight: normal;
+        margin: 0;
+    }
+}
+
+article.tabs {
+    border: 1px solid @nav-tabs-border-color;
+    border-top: none;
+    padding: @padding-base-vertical @padding-large-horizontal;
+    border-radius: 0 0 @border-radius-base @border-radius-base;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.top-right-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: @padding-large-vertical @padding-xl-horizontal;
+    z-index: @zindex-modal-background;
+}
+
+.relative {
+    position: relative;
+}
+
+// TODO Eventually this will no longer be required (everything will use `.clearfix` instead)
+.clear {
+    clear: both;
+}

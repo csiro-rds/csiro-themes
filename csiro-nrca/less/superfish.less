@@ -1,0 +1,159 @@
+ul.sf-menu {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    ul {
+        display: none; /* initially hidden */
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 100000;
+        list-style: none;
+        margin: 0 0 0 @padding-large-horizontal;
+        padding: 0 @padding-base-horizontal;
+        border: 1px solid @gray-lighter;
+        border-radius: @border-radius-base;
+        background-color: #fff;
+        box-shadow: 0 0 @padding-base-horizontal @gray-lighter;
+    }
+
+    li {
+        position: relative;
+
+        &:hover > a {
+            background-color: @gray-lighter;
+        }
+    }
+
+    a {
+        display: block;
+        padding: @padding-base-vertical @padding-base-horizontal;
+        margin: 0 -@padding-base-horizontal;
+        text-decoration: none;
+        white-space: nowrap;
+
+        &:hover:not(.disabled) {
+            background-color: @alert-info-bg;
+        }
+
+        &.sf-menu-disabled {
+            opacity: 0.5;
+            color: #FFFFFF;
+        }
+    }
+
+    .sf-spacer {
+        margin: 0 -@padding-base-horizontal;
+        height: 0;
+        border-top: 1px dotted #cccccc;
+    }
+}
+
+/* TODO Fix the below, or remove if unused */
+
+/*** SKIN FOR "SMALL" MENUS USED WITHIN BUTTONS ***/
+.sf-small-menu .sf-menu {
+    float: right;
+    margin-bottom: 0;
+    text-align: left;
+    border-right: 0 solid #fff;
+}
+.sf-small-menu .sf-menu a {
+    border-left: 0 solid #fff;
+    border-top: 0 solid #cccccc;
+    padding: .75em 2em;
+    background: #cccccc;
+    text-decoration: none;
+}
+.sf-small-menu .sf-menu a, .sf-small-menu .sf-menu a:visited  {
+    color: #000000;
+    font-weight: normal;
+}
+.sf-small-menu .sf-menu ul ul {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.sf-small-menu .sf-menu ul ul ul {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.sf-small-menu .sf-menu li {
+    background: #eeeeee;
+}
+.sf-small-menu .sf-menu li li {
+    background: #eeeeee;
+}
+
+.sf-small-menu .sf-menu li li li {
+    background: #eeeeee;
+}
+.sf-small-menu .sf-menu li li a, .sf-small-menu .sf-menu  li li a:visited, .sf-small-menu .sf-menu li li li a, .sf-small-menu .sf-menu  li li li a:visited  {
+    color: #4b4a4a;
+    font-weight: bold;
+}
+
+
+/*** SKIN FOR MENUS USED WITHIN HIERARCHY SCREENS ***/
+#browseTypeMenu {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+.sf-hier-menu ul.sf-menu li a div {
+    display: inline;
+}
+.sf-hier-menu .sf-menu {
+    float: none;
+    margin-bottom: 0;
+    text-align: left;
+    border-right: 0 solid #fff;
+}
+.sf-hier-menu ul.sf-menu li a{
+    padding: 0em 2em 1em 0em;
+    background: #FFFFFF;
+    text-decoration: none;
+}
+.sf-hier-menu ul.sf-menu ul li a, .sf-hier-menu ul.sf-menu ul ul li a, .sf-hier-menu ul.sf-menu ul ul ul li a  {
+    border-left: 0 solid #fff;
+    border-top: 0 solid #cccccc;
+    padding: .75em 2em;
+    background: #cccccc;
+    text-decoration: none;
+}
+.sf-hier-menu .sf-menu a, .sf-hier-menu .sf-menu a:visited  {
+    color: #000000;
+    font-weight: normal;
+}
+.sf-hier-menu ul.sf-menu ul li a:hover, .sf-hier-menu ul.sf-menu ul ul li a:hover, .sf-hier-menu ul.sf-menu ul ul ul li a:hover  {
+    border-left: 0 solid #fff;
+    border-top: 0 solid #cccccc;
+    padding: .75em 2em;
+    background: #4B4B4B;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.sf-hier-menu .sf-menu ul ul {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.sf-hier-menu .sf-menu ul ul ul {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.sf-hier-menu .sf-menu li {
+    background: #eeeeee;
+}
+.sf-hier-menu .sf-menu li li {
+    background: #eeeeee;
+}
+
+.sf-hier-menu .sf-menu li li li {
+    background: #eeeeee;
+}
+.sf-hier-menu .sf-menu li li a, .sf-hier-menu .sf-menu  li li a:visited, .sf-hier-menu .sf-menu li li li a, .sf-hier-menu .sf-menu  li li li a:visited  {
+    color: #4b4a4a;
+    font-weight: bold;
+}

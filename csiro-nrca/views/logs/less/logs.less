@@ -1,0 +1,28 @@
+.logs {
+    table {
+        &.table {
+            margin-top: @padding-base-vertical;
+            th {
+                white-space: nowrap;
+                &.list-header-sorted-desc,
+                &.list-header-sorted-asc {
+                    background-color: @gray-lighter;
+                }
+                .glyphicon-menu-up,
+                .glyphicon-menu-down{
+                    display: none;
+                }
+                &.list-header-sorted-asc {
+                    .glyphicon-menu-up {
+                        display: inline;
+                    }
+                }
+                &.list-header-sorted-desc {
+                    .glyphicon-menu-down {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}

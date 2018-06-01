@@ -1,0 +1,82 @@
+@inverse-bg: @text-color;
+@inverse-text-color: @body-bg;
+.component-results-editable {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: @inverse-bg;
+    color: @inverse-text-color;
+
+    .results-header {
+        .results-editor-status {
+            display: none;
+            font-weight: bold;
+        }
+
+        .close {
+            background-color: @inverse-bg;
+            color: @inverse-text-color;
+            opacity: .7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .results-editor-content {
+        .loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: @padding-base-vertical @padding-base-horizontal;
+            text-align: center;
+            background-color: @inverse-bg;
+            color: @inverse-text-color;
+        }
+
+        .read-only {
+            position: relative;
+        }
+
+        .error {
+            border: 2px dashed @brand-danger;
+        }
+
+        .non-editable {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABZJREFUCB1jYEACZ86c+Q/nEskBqgcAy7kNjS5U9PIAAAAASUVORK5CYII=) repeat;
+        }
+
+        .overlay-icon {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 0;
+            right: 0;
+        }
+        color: @text-color;
+    }
+
+    .results-editor-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: none;
+        margin: 0;
+        padding: 0;
+        border: 2px solid @gray-light;
+        z-index: 31000;
+        background-color: @body-bg;
+        color: @text-color;
+        border-radius: @border-radius-base;
+    }
+
+    .section-box {
+        padding: 0 @padding-small-horizontal;
+    }
+}
